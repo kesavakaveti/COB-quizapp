@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
-    <div class="quiz-container">
-        <h1>Quiz App</h1>
-        <div class="tot">
-            <div class="question " id="question"></div>
-            <div class="options " id="options"></div>
+    <h1>My To-Do List</h1>
+    <div class="total">
+        <div class="todo-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
         </div>
-        <div class="result " id="result"></div>
+        <ul id="taskList">
+            <!-- Tasks will be added here -->
+        </ul>
     </div>
-
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
